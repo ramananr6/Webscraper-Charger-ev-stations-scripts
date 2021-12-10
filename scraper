@@ -1,0 +1,184 @@
+
+#GET 
+https://ev-v2.cit.cc.api.here.com/ev/stations.xml
+?prox=52.516667,13.383333,5000
+&connectortype=31
+-H 'Authorization: Bearer {YOUR_TOKEN}"
+      
+      
+{
+  "hasMore": true,
+  "count": 50,
+  "evStations": {
+    "evStation": [
+      {
+        "poolId": "276u33db845jn-aGVyZS1ldjplY29tb3ZlbWVudDo4OTU5MDU0ODI",
+        "totalNumberOfConnectors": 2,
+        "connectors": {
+          "connector": [
+            {
+              "supplierName": "RWE eRoaming",
+              "connectorType": {
+                "name": "IEC 62196-2 type 2 (Mennekes)",
+                "id": "31"
+              },
+              "chargeCapacity": "380-480VAC, 3-phase at max. 32 A",
+              "maxPowerLevel": 22.08,
+              "customerChargeLevel": "3",
+              "customerConnectorName": "AC EV connector (Mennekes - type 2)",
+              "fixedCable": false,
+              "connectorDetails": {
+                "privateAccess": false,
+                "open24x7": true,
+                "openingHours": {
+                  "regularOpeningHours": [
+                    {
+                      "daymask": 127,
+                      "period": [
+                        {
+                          "from": "00:00:00",
+                          "to": "24:00:00"
+                        }
+                      ]
+                    }
+                  ],
+                  "annualOpenings": [ ]
+                },
+                "pay": true,
+                "manufacturer": "RWE"
+              },
+              "chargingPoint": {
+                "chargeMode": "3",
+                "voltsRange": "380-480V AC",
+                "phases": 3,
+                "ampsRange": "32A",
+                "numberOfConnectors": 2
+              }
+            }
+          ]
+        },
+        "evStationDetails": {
+          "paymentMethods": {
+            "subscription": {
+              "provider": "RWE eRoaming",
+              "accept": true
+            },
+            "note": "Mobile Payment Option Available"
+          },
+          "notes": "Ladestation RWE Effizienz GmbH"
+        },
+        "address": {
+          "city": "Berlin",
+          "country": "DEU",
+          "region": "Berlin",
+          "street": "Luisenstraße",
+          "streetNumber": "31",
+          "postalCode": "10117"
+        },
+        "contacts": {
+          "phone": [
+            {
+              "value": "+498002255793",
+              "label": "PHONE"
+            }
+          ]
+        },
+        "distance": 421,
+        "position": {
+          "latitude": 52.5199013,
+          "longitude": 13.3800898
+        },
+        "name": "RWE Effizienz GmbH",
+        "id": "276u33db-b2c840878cfc409fa5a0aef858419037",
+        "lastUpdateTimestamp": "2015-08-28T04:39:27.737Z",
+        "timeZone":"Europe/Berlin"
+      },
+      {
+      --- removed to shorten document
+      }
+    ]
+  }
+}
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ev:evStationsResult xmlns:fuel="http://www.here.com/2014/02/ACS-Fuel" xmlns:common="http://www.here.com/2014/02/ACS-Common" xmlns:ev="http://www.here.com/2014/02/ACS-EV" xmlns:parking-offstreet="http://www.here.com/2014/02/ACS-Parking-Offstreet">
+  <hasMore>true</hasMore>
+  <count>50</count>
+  <evStations>
+    <evStation id="276u33db-b2c840878cfc409fa5a0aef858419037" lastUpdateTimestamp="2015-08-28T04:39:27.737Z" timeZone="Europe/Berlin">
+      <address>
+        <city>Berlin</city>
+        <country>DEU</country>
+        <region>Berlin</region>
+        <street>Luisenstraße</street>
+        <streetNumber>31</streetNumber>
+        <postalCode>10117</postalCode>
+      </address>
+      <contacts>
+        <phone>
+          <value>+498002255793</value>
+          <label>PHONE</label>
+        </phone>
+      </contacts>
+      <distance>421</distance>
+      <position>
+        <latitude>52.5199013</latitude>
+        <longitude>13.3800898</longitude>
+      </position>
+      <name>RWE Effizienz GmbH</name>
+      <poolId>276u33db845jn-aGVyZS1ldjplY29tb3ZlbWVudDo4OTU5MDU0ODI</poolId>
+      <totalNumberOfConnectors>2</totalNumberOfConnectors>
+      <connectors>
+        <connector>
+          <supplierName>RWE eRoaming</supplierName>
+          <connectorType>
+            <name>IEC 62196-2 type 2 (Mennekes)</name>
+            <id>31</id>
+          </connectorType>
+          <chargeCapacity>380-480VAC, 3-phase at max. 32 A</chargeCapacity>
+          <maxPowerLevel>22.08</maxPowerLevel>
+          <customerChargeLevel>3</customerChargeLevel>
+          <customerConnectorName>AC EV connector (Mennekes - type 2)</customerConnectorName>
+          <fixedCable>false</fixedCable>
+          <connectorDetails>
+            <privateAccess>false</privateAccess>
+            <open24x7>true</open24x7>
+            <openingHours>
+              <regularOpeningHours>
+                <daymask>127</daymask>
+                <period>
+                  <from>00:00:00</from>
+                  <to>24:00:00</to>
+                </period>
+              </regularOpeningHours>
+            </openingHours>
+            <pay>true</pay>
+            <manufacturer>RWE</manufacturer>
+          </connectorDetails>
+          <chargingPoint>
+            <chargeMode>3</chargeMode>
+            <voltsRange>380-480V AC</voltsRange>
+            <phases>3</phases>
+            <ampsRange>32A</ampsRange>
+            <numberOfConnectors>2</numberOfConnectors>
+          </chargingPoint>
+        </connector>
+      </connectors>
+      <evStationDetails>
+        <paymentMethods>
+          <subscription accept="true">
+            <provider>RWE eRoaming</provider>
+          </subscription>
+          <note>Mobile Payment Option Available</note>
+        </paymentMethods>
+        <notes>Ladestation RWE Effizienz GmbH</notes>
+      </evStationDetails>
+    </evStation>
+    <evStation id="276u33db-822fe7352e204e36b733275c62e2ec4e" lastUpdateTimestamp="2015-08-28T08:53:33.834Z" timeZone="Europe/Berlin">
+      --- removed to shorten document
+    </evStation>
+  </evStations>
+</ev:evStationsResult>
+
